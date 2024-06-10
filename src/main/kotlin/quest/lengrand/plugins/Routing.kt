@@ -15,7 +15,7 @@ fun Application.configureRouting() {
         }
 
         get("/mood/{mood}"){
-            call.respondText("Feeling ${call.parameters["mood"]}?")
+            call.respondText("Are you feeling ${call.parameters["mood"]}?")
         }
     }
 }
